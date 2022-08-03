@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Template for a LaTex article in English.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% AMS packages:
+\usepackage{amsmath, amsthm, amsfonts}
+
+% bold math
+\usepackage{bm}
+
+% for including figures
+\usepackage{graphicx}
+
+% hyperlinks in urls, refs etc., hidelinks option removes the ugly highlights 
+\usepackage[hidelinks]{hyperref}
+
+% for citing
+\usepackage[square]{natbib}
+
+% set natbib style as numbers with square brackets
+\setcitestyle{numbers, square}
+
+
+% Shortcuts.
+% One can define new commands to shorten frequently used
+% constructions. As an example, this defines the R and Z used
+% for the real and integer numbers.
+%-----------------------------------------------------------------
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+%-----------------------------------------------------------------
+\title{Title}
+\author{Author\\
+  \small - \\
+}
+
+\begin{document}
+\maketitle
+
+
+\section{Abstract}
+Textual citations \citet{knuth_1986}. Parenthetical citations \citep{knuth_1986}.
+
+
+% Bibliography
+%-----------------------------------------------------------------
+\bibliography{bibliography}{}
+\bibliographystyle{plainnat}
+
+\end{document}
+
